@@ -1,12 +1,25 @@
 body{ /*si son elementos no llevan nada al inicio*/
     background-color: #222;
     color: white;
+    font-family: "poppins",sans-serif;
+    font-size: 14;
+    font-weight: 200;
+
+}
+
+h2{
+    font-size: 36;
 }
 
 h3{
     color: #999;
-}
+    font-size: 18;
+    font-weight: 300;
 
+}
+p{
+    text-align: justify;
+}
 .hashtag{ /*cuando es una clase es con un .*/
     color: #ffc900
 }
