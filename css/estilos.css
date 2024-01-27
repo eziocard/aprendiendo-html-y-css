@@ -1,4 +1,17 @@
-body{
+body{ /*si son elementos no llevan nada al inicio*/
     background-color: #222;
     color: white;
+}
+
+h3{
+    color: #999;
+}
+
+.hashtag{ /*cuando es una clase es con un .*/
+    color: #ffc900
+}
+
+#Experiencia{  /*cuando son id se pone con un #*/
+    background-color: white;
+    color: #222;
 }
