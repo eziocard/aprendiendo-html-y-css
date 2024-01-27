@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    <head>
+     <!--todo lo que se pone en las etiquetas head no se ve en pantalla-->
+     <meta charset="utf-8" ><!--esto es para que aparezcan los caracteres occidentales--> 
+     <title> portfolio de Ricardo López</title> <!--este es el titulo que aparece en la pestaña del navegador-->
+     <link rel = "stylesheet" href="./css/estilos.css"><!--esto sirve para externalizar el css-->
+    </head>
+    <body><!--de esta manera podemos poner el fondo de color-->
+        <!--al momento de crear la pagina web se debe divirdir en bloques para poder separarlas 
+            secciones por asi decir, para poder hacer esto se utiliza la etiqueta <div> -->
+
+            <!--Bloque de inicio-->
+            <div>
+                 <!--Existen varias jerarquias para poder poner titulos
+                 y son h1,h2,h3,h4,h5,h6. es mala practica poner texto sin etiquetas-->
+                <h2>Ricardo López</h2><!--titulo-->
+                <h3>#Programador</h3>
+                <h3>#Gimnasta</h3>
+            </div>
+            <!--Fin del bloque inicio-->
+            
+            <!--Bloque de Sobre mi-->
+            <div>
+                <h2>Sobre mi</h2> <!--titulo-->
+                
+                <img src="./imagenes/foto.png" alt="foto de Ricardo López" height="250"> <!--esta etiqueta sirve para poner una imagen-->
+
+                <!--Existe el comando "lorem" que permite rellenar de texto para poder hacer pruebas en los parrafos
+                    la etiqueta <p> sirve para poder crearlos-->
+                <p>Mi nombre es <strong>Ricardo López</strong> y soy estudiante de la carrera <!--la etiqueta strong sirve para poder destacar partes del texto-->
+                <strong>Ingeneria Civil Informatica</strong> en la <strong>Universidad Autonoma de Chile</strong></p>
+                
+                <p>Me identifico como una persona muy perseverante y aplicado en diversas areas y con
+                    capacidad de adaptarme a diversas situaciones y con muchas ganas de seguir aprendiendo y mejorando
+                    en mis conocimientos para poder ser habil en distintas areas</p>
+                </div>
+                <!--Fin del bloque Sobre mi-->
+
+                <!--Bloque portafolio-->
+             <div>
+                <h2>Portfolio</h2>
+                <h2>Una mirada mas alla del texto</h2>
+                <table><!--Esto nos permite crear tablas para poder mostrar la informacion en filas y columnas
+                        las tablas nos permiten encapsular el head y el body para asi mostrar la informacion como si fuera un menu o ventana-->
+                    <thead><!--la "t" que tiene adelante es solamente para hacer referecia que esta dentro de una table-->
+                        <tr>
+                            <th colspan="4"> Ejemplos de portafolio</th><!--la etiqueta th hace lo mismo que el strong en los parrafos pero en este caso
+                                                                        se utiliza para titulo, y el metodo colspan sirve para unir las columnas que uno quiere que
+                                                                        el titulo este sobre ellas en este caso tomamos las 4 columnas y le colocamos el titulo sobre ella-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!--esto es para indicar que se esta creando una fila-->
+                            <td>Musica</td><!--esto es para indicar que se esta creando una columna-->
+                            <td>Producción</td>
+                            <td>web</td>
+                            <td>Diseños</td>
+                        </tr>
+
+                        <tr> 
+                            <td>Conciertos</td>
+                            <td>BS0s</td>
+                            <td>App</td>
+                            <td>Cartel</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+             </div>
+    </body>
+</html>
