@@ -1,3 +1,83 @@
-body{
-    background-color: bisque;
+
+
+*{/*el * sirve para poder aplicar los cambios a todas las etiquetas*/
+    margin: 0;
+    padding: 0;/*el padding es la distancia que va a tener de las esquinas antes de poner un texto o imagen es como la "sangria" por asi decir*/
+}
+body{ /*si son elementos no llevan nada al inicio*/
+    background-color: #222;
+    color: white;
+    font-family: "poppins",sans-serif;
+    font-size: 14;
+    font-weight: 200;
+
+}
+
+i{
+    font-size: 24px;
+}
+
+i:hover{/*los : permiten crear una seudo clase, el hover es lo que permite que al pasar el mouse por encima el logo cambio de color*/
+    color: #ffc900;
+}
+
+a:any-link{/*------------*/
+    color: white;       /*|*/
+}                       /*|*/
+a:-webkit-any-link{     /*|*/
+    color: white      /*|---------------esto es lo que permite que sea compatible con todos los navegadores y que los logos esten siempre en color blanco*/
+}                       /*|*/
+a:-moz-any-link{        /*|*/
+    color: white      /*|*/
+}/*-----------------------|*/
+.seccion{
+    padding-left: 100px; /*este muestra cuando espacio va a tener de la esquina izquierda*/
+    padding-right: 100px; /*este muestra cuando espacio va a tener de la esquina derecha*/
+    padding-top: 10px; /*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de arriba*/
+    padding-bottom: 10px;/*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de abajo*/
+
+}
+
+h2{
+    font-size: 36;
+    line-height: 36px;/*esto sirve ver la distancia entre texto "es como juntar el texto de abajo con el de arriba como acercandolo*/
+}
+
+h3{
+    color: #999;
+    font-size: 18;
+    font-weight: 300;
+
+}
+p{
+    text-align: justify;
+}
+.hashtag{ /*cuando es una clase es con un .*/
+    color: #ffc900
+}
+
+#Experiencia{  /*cuando son id se pone con un #*/
+    background-color: white;
+    color: #222;
+}
+
+#portfolio{
+    border-top: 1px solid #ffc900;
+}
+
+#inicio{
+    background-image: url(../imagenes/inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+}
+
+#redes{
+    margin-top: 20px;
+    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
+}
+li{
+    float: left; 
+    margin-right: 10px;
 }

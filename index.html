@@ -5,24 +5,43 @@
      <!--todo lo que se pone en las etiquetas head no se ve en pantalla-->
      <meta charset="utf-8" ><!--esto es para que aparezcan los caracteres occidentales--> 
      <title> portfolio de Ricardo López</title> <!--este es el titulo que aparece en la pestaña del navegador-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/e7837afc12.js" crossorigin="anonymous"></script><!--fontawesom es una libreria que permite obtener iconos o fuentes para poder utilizar, 
+                                                                                                en este caso son los logos de instagram entre otros.(esto estos se obtienen desde la pagina web).
+                                                                                                -->
      <link rel = "stylesheet" href="./css/estilos.css"><!--esto sirve para externalizar el css-->
+    
     </head>
     <body><!--de esta manera podemos poner el fondo de color-->
         <!--al momento de crear la pagina web se debe divirdir en bloques para poder separarlas 
             secciones por asi decir, para poder hacer esto se utiliza la etiqueta <div> -->
 
             <!--Bloque de inicio-->
-            <div>
+            <div id = "inicio" class = "seccion">
                  <!--Existen varias jerarquias para poder poner titulos
                  y son h1,h2,h3,h4,h5,h6. es mala practica poner texto sin etiquetas-->
                 <h2>Ricardo López</h2><!--titulo-->
-                <h3>#Programador</h3>
-                <h3>#Gimnasta</h3>
+                <h3 class = "hashtag">#Programador</h3>
+                <h3 class = "hashtag">#Gimnasta</h3>
+
+                <ul id="redes"> <!--esto crea una lista en el cual nosotros ahora colocamos los logos-->
+                    <li><a href="https://www.instagram.com/rj_lopez.d/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><!--este es el logo de instagram--> <!--la etiqueta
+                                                                                                                                                                    <a href> permite 
+                                                                                                                                                                    colocar un link para que 
+                                                                                                                                                                    cuando se presione se pueda
+                                                                                                                                                                    abrir-->
+                    <li><a href="https://steamcommunity.com/profiles/76561198343322599/" target="_blank"><i class="fa-brands fa-steam"></i></a></li><!--logo de steam-->
+                </ul>
+                
+
+
             </div>
             <!--Fin del bloque inicio-->
             
             <!--Bloque de Sobre mi-->
-            <div>
+            <div id = "sobremi" class = "seccion">
                 <h2>Sobre mi</h2> <!--titulo-->
                 
                 <img src="./imagenes/foto.png" alt="foto de Ricardo López" height="250"> <!--esta etiqueta sirve para poner una imagen-->
@@ -39,9 +58,9 @@
                 <!--Fin del bloque Sobre mi-->
 
                 <!--Bloque portafolio-->
-             <div>
+             <div id = "portfolio" class = "seccion">
                 <h2>Portfolio</h2>
-                <h2>Una mirada mas alla del texto</h2>
+                <h3>Una mirada mas alla del texto</h3>
                 <table><!--Esto nos permite crear tablas para poder mostrar la informacion en filas y columnas
                         las tablas nos permiten encapsular el head y el body para asi mostrar la informacion como si fuera un menu o ventana-->
                     <thead><!--la "t" que tiene adelante es solamente para hacer referecia que esta dentro de una table-->
@@ -69,5 +88,11 @@
                 </table>
 
              </div>
+             <div id="Experiencia">
+                <h2>Experiencia and Skills</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos? Iusto nisi voluptas molestiae facere a in, laboriosam consequatur. Debitis dicta vero amet quis repellat et in esse atque officia.</p>
+             </div>
+
     </body>
 </html>
