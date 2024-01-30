@@ -13,6 +13,23 @@ body{ /*si son elementos no llevan nada al inicio*/
 
 }
 
+i{
+    font-size: 24px;
+}
+
+i:hover{/*los : permiten crear una seudo clase, el hover es lo que permite que al pasar el mouse por encima el logo cambio de color*/
+    color: #ffc900;
+}
+
+a:any-link{/*------------*/
+    color: white;       /*|*/
+}                       /*|*/
+a:-webkit-any-link{     /*|*/
+    color: white      /*|---------------esto es lo que permite que sea compatible con todos los navegadores y que los logos esten siempre en color blanco*/
+}                       /*|*/
+a:-moz-any-link{        /*|*/
+    color: white      /*|*/
+}/*-----------------------|*/
 .seccion{
     padding-left: 100px; /*este muestra cuando espacio va a tener de la esquina izquierda*/
     padding-right: 100px; /*este muestra cuando espacio va a tener de la esquina derecha*/
@@ -53,4 +70,14 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px;
+}
+
+#redes{
+    margin-top: 20px;
+    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
+}
+li{
+    float: left; 
+    margin-right: 10px;
 }
