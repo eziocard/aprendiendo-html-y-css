@@ -65,6 +65,10 @@ p{
     border-top: 1px solid #ffc900;
 }
 
+ul{
+    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
+}
 #inicio{
     background-image: url(../imagenes/inicio.png);
     background-repeat: no-repeat;
@@ -74,10 +78,22 @@ p{
 
 #redes{
     margin-top: 20px;
-    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
     
 }
 li{
     float: left; 
     margin-right: 10px;
 }
+
+nav{
+    background-color: #222;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+nav ul{ /*esto sirve para poner caracteristica a clases que cumplan la condicion de ser hijas de otras como por ejemplo si hay un nav que tenga de hijo un ul se le aplicara lo siguiente*/
+    display: inline-block;
+}
+    
