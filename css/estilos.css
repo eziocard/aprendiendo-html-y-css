@@ -30,12 +30,12 @@ a:-webkit-any-link{     /*|*/
 a:-moz-any-link{        /*|*/
     color: white      /*|*/
 }/*-----------------------|*/
-.seccion{
+
+section{
     padding-left: 100px; /*este muestra cuando espacio va a tener de la esquina izquierda*/
     padding-right: 100px; /*este muestra cuando espacio va a tener de la esquina derecha*/
     padding-top: 10px; /*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de arriba*/
     padding-bottom: 10px;/*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de abajo*/
-
 }
 
 h2{
