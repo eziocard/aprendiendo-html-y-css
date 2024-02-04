@@ -13,13 +13,6 @@ body{ /*si son elementos no llevan nada al inicio*/
 
 }
 
-i{
-    font-size: 24px;
-}
-
-i:hover{/*los : permiten crear una seudo clase, el hover es lo que permite que al pasar el mouse por encima el logo cambio de color*/
-    color: #ffc900;
-}
 
 a:any-link{/*------------*/
     color: white;       /*|*/
@@ -30,12 +23,20 @@ a:-webkit-any-link{     /*|*/
 a:-moz-any-link{        /*|*/
     color: white      /*|*/
 }/*-----------------------|*/
-.seccion{
+
+a:hover{
+    color: #ffc900;
+}
+a{
+    font-size: 26px;
+    text-decoration: none;
+}
+section{
+    
     padding-left: 100px; /*este muestra cuando espacio va a tener de la esquina izquierda*/
     padding-right: 100px; /*este muestra cuando espacio va a tener de la esquina derecha*/
     padding-top: 10px; /*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de arriba*/
     padding-bottom: 10px;/*esto sirve para hacer la separacion entre secciones, la distancia que tendran con el bloque de abajo*/
-
 }
 
 h2{
@@ -65,19 +66,79 @@ p{
     border-top: 1px solid #ffc900;
 }
 
+ul{
+    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
+}
 #inicio{
     background-image: url(../imagenes/inicio.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px;
+    padding-top: 75px;
+    
 }
 
 #redes{
     margin-top: 20px;
-    list-style: none; /*esto quita el punto que se pone detras de los logos*/
+    
     
 }
 li{
     float: left; 
     margin-right: 10px;
+}
+
+nav{
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+nav ul{ /*esto sirve para poner caracteristica a clases que cumplan la condicion de ser hijas de otras como por ejemplo si hay un nav que tenga de hijo un ul se le aplicara lo siguiente*/
+    display: inline-block;
+}
+
+nav ul li{
+    padding-right: 25px;
+}
+
+#logo{
+    padding-top: 4px;
+}
+
+#sobremi{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+#Contacto{
+    background-color: #ffc900;
+
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+    color:#222
+}
+
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type = "submit"]{
+    background-color: #222;
+    color: white;
+    padding: 5px;
+    grid-column: 2/3;
+    justify-self: end;
 }
