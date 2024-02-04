@@ -20,9 +20,9 @@
                 
             <nav>
                 <ul>
-                    <li><i>Sobre mi</i></li>
-                    <li><i class="fa-solid fa-house"></i></i></li>
-                    <li><i>Contacto</i></li>
+                    <li><a href="#sobremi"> Sobre mi</a></li>
+                    <li><a href="#inicio"><i id = "logo" class="fa-solid fa-house"></i></i></a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav> <!--Menu de navegacion-->
             <article>
@@ -49,20 +49,22 @@
             <!--Fin del bloque inicio-->
             
             <!--Bloque de Sobre mi-->
-            <section id = "sobremi">
-                <h2>Sobre mi</h2> <!--titulo-->
+            
+            
+            <section id = "sobremi"> 
+                <div id ="imgsobremi"><img src="./imagenes/foto.png" alt="foto de Ricardo López" height="250"> <!--esta etiqueta sirve para poner una imagen--></div>
+                <div id="bodysobremi"><h2 id="titulo_sobremi">Sobre mi</h2> <!--titulo-->
+                    
+            <!--Existe el comando "lorem" que permite rellenar de texto para poder hacer pruebas en los parrafos
+                la etiqueta <p> sirve para poder crearlos-->
                 
-                <img src="./imagenes/foto.png" alt="foto de Ricardo López" height="250"> <!--esta etiqueta sirve para poner una imagen-->
-
-                <!--Existe el comando "lorem" que permite rellenar de texto para poder hacer pruebas en los parrafos
-                    la etiqueta <p> sirve para poder crearlos-->
                 <p>Mi nombre es <strong>Ricardo López</strong> y soy estudiante de la carrera <!--la etiqueta strong sirve para poder destacar partes del texto-->
-                <strong>Ingeneria Civil Informatica</strong> en la <strong>Universidad Autonoma de Chile</strong></p>
-                
-                <p>Me identifico como una persona muy perseverante y aplicado en diversas areas y con
-                    capacidad de adaptarme a diversas situaciones y con muchas ganas de seguir aprendiendo y mejorando
-                    en mis conocimientos para poder ser habil en distintas areas</p>
+                <strong>Ingeneria Civil Informatica </strong> en la <strong>Universidad Autonoma de Chile </strong>
+                    Me identifico como una persona muy perseverante y aplicado en diversas areas y con
+                    capacidad de adaptarme a diversas situaciones, con muchas ganas de seguir aprendiendo y mejorando
+                    en mis conocimientos para poder ser habil en distintas areas</p></div>
             </section>
+        
                 <!--Fin del bloque Sobre mi-->
 
                 <!--Bloque portafolio-->
@@ -100,6 +102,49 @@
                 <h2>Experiencia and Skills</h2>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eos? Iusto nisi voluptas molestiae facere a in, laboriosam consequatur. Debitis dicta vero amet quis repellat et in esse atque officia.</p>
+             </section>
+
+             <section id = "Contacto">
+                <h2>Contacto</h2>
+                <h3>Envia tus dudas</h3>
+                <form action="#"> <!--iniciando formulario-->
+                    <div class="itemform"><!--lo encerramos en un div para poder modificarlo en css-->
+                    <label for="nombre">Nombre</label><!--es la etiqueta que va a ir antes de poner la casilla de entrada-->
+                    <input type="text" id = "nombre" name = "nombre" minlength="2" maxlength="30" size="32" required><!--es donde el usuario pone el texto
+                                                                                                   minlength y maxlength sirve para poner restriciones
+                                                                                                con el tamaño de texto que pondra el usuario, size es el tamaño de la casilla
+                                                                                            -->
+                    </div>
+
+                    <div class="itemform">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id = "empresa" name = "empresa" minlength="5" maxlength="30" size="32" required>
+                    </div>
+
+                    <div class="itemform">
+                        <label for="email">Email</label>
+                        <input type="email" id = "email" name = "email" minlength="10" maxlength="30" size="32" required>
+                    </div>
+
+
+                    <div class="itemform">
+                        <label for = "mensaje">mensaje</label>
+                        <textarea name = "mensaje" id = "mensaje" cols="33" rows="5"></textarea>
+
+                    </div>
+
+                    <div class = "itemform">
+                        <!-- esta es una forma de poner el boton <button type="button">contactar</button> -->
+                        <input type="submit" name="enviar" value="Contactar"> <!--esta es la otra forma de poner un boton--><!--en la casilla value se pone el texto que tendra el boton-->
+
+                    </div>
+
+
+
+
+                    
+                </form>
+
              </section>
             </article>
              <footer></footer><!--pie de pagina-->
